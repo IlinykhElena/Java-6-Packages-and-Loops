@@ -1,9 +1,9 @@
 package ru.netology.sqr;
 
 public class SQRServiceCalc {
-    int i = 0;
 
-    public int calcSqr(int a, int x) {
+    public int calcSqrAmount(int a, int x) {
+        int i = 0;
         for (a = 10; a <= x; a++) {
             if ((a * a >= 200) && (a * a <= 300)) {
                 i++;
