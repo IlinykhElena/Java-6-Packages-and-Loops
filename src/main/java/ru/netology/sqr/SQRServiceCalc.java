@@ -3,13 +3,13 @@ package ru.netology.sqr;
 public class SQRServiceCalc {
 
     public int calcSqrAmount(int a, int x) {
-        int i = 0;
+        int count = 0;
         for (a = 10; a <= x; a++) {
             if ((a * a >= 200) && (a * a <= 300)) {
-                i++;
+                count++;
             }
         }
-        return i;
+        return count;
     }
 }
 

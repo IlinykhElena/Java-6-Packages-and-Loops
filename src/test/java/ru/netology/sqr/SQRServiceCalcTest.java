@@ -7,6 +7,16 @@ import org.junit.jupiter.api.Test;
 public class SQRServiceCalcTest {
 
     @Test
+    public void shouldCalcCorrectLimit() {
+        SQRServiceCalc service = new SQRServiceCalc();
+
+        int expected = 3;
+        int actual = service.calcSqrAmount(10, 99);
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void shouldCalcUnderLimit() {
         SQRServiceCalc service = new SQRServiceCalc();
 
