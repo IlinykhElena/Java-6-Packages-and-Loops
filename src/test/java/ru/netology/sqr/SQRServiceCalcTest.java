@@ -11,7 +11,7 @@ public class SQRServiceCalcTest {
         SQRServiceCalc service = new SQRServiceCalc();
 
         int expected = 3;
-        int actual = service.calcSqrAmount(10, 99);
+        int actual = service.calcSqrAmount(200, 300);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -21,7 +21,7 @@ public class SQRServiceCalcTest {
         SQRServiceCalc service = new SQRServiceCalc();
 
         int expected = 0;
-        int actual = service.calcSqrAmount(0, 9);
+        int actual = service.calcSqrAmount(200, 210);
 
         Assertions.assertEquals(expected, actual);
     }
@@ -31,7 +31,7 @@ public class SQRServiceCalcTest {
         SQRServiceCalc service = new SQRServiceCalc();
 
         int expected = 3;
-        int actual = service.calcSqrAmount(10, 200);
+        int actual = service.calcSqrAmount(300, 400);
 
         Assertions.assertEquals(expected, actual);
     }

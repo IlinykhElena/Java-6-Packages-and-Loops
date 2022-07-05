@@ -2,11 +2,13 @@ package ru.netology.sqr;
 
 public class SQRServiceCalc {
 
-    public int calcSqrAmount(int numeralFromScope, int maxNumber) {
+    public int calcSqrAmount(int min, int max) {
         int count = 0;
-        for (numeralFromScope = 10; numeralFromScope <= maxNumber; numeralFromScope++) {
-            if ((numeralFromScope * numeralFromScope >= 200) && (numeralFromScope * numeralFromScope <= 300)) {
-                count++;
+        for (int i = 10; i <= 99; i++) {
+            if (i * i >= min) {
+                if (i * i <= max) {
+                    count++;
+                }
             }
         }
         return count;
